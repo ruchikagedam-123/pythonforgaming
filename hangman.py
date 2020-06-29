@@ -19,7 +19,7 @@ def hangman():
                 main = main + "_"+" "
         if main == word:
             print(main)
-            print("you win !")
+            print("you win ", name,"!")
             break
         print("Guess the word : ", main)
         guess = input()
@@ -90,3 +90,52 @@ print("Welcome", name)
 print("Try to guess the word in less than 9 attempt")
 hangman()
 print()
+
+
+
+OUTPUT :
+    Enter Your name  :  ruchika
+Welcome ruchika
+Try to guess the word in less than 9 attempt
+Guess the word :  _ _ _ _ _ 
+b
+Guess the word :  b_ _ _ _ 
+a
+Guess the word :  ba_ _ _ 
+g
+Guess the word :  bag_ _ 
+h
+Guess the word :  bagh_ 
+h
+Guess the word :  bagh_ 
+df
+Enter a valid character
+u
+4 turns left
+-----------
+    \ 0 /   
+      |     
+     / \     
+Guess the word :  bagh_ 
+t
+4 turns left
+-----------
+    \ 0 /   
+      |     
+     / \     
+Guess the word :  bagh_ 
+b
+Guess the word :  bagh_ 
+y
+4 turns left
+-----------
+    \ 0 /   
+      |     
+     / \     
+Guess the word :  bagh_ 
+i
+baghi
+you win ruchika!
+
+
+Process finished with exit code 0
